@@ -75,12 +75,58 @@ table {
 }
 
 @font-face {
+    font-family: 'geared_slabbold';
+    src: url('../fonts/Geared/gearedslab-bold-webfont.eot');
+    src: url('../fonts/Geared/gearedslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geared/gearedslab-bold-webfont.woff') format('woff'),
+         url('../fonts/Geared/gearedslab-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Geared/gearedslab-bold-webfont.svg#geared_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	/* designed by Derek Weathersbee <www.derekweathersbee.com> // found at Lost Type <http://www.losttype.com/font/?name=franchise> */
+    font-family: 'franchiseregular'; 
+    src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot');
+    src: url('../fonts/Franchise-Bold/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.woff') format('woff'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Franchise-Bold/franchise-bold-webfont.svg#franchiseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MenschBold';
+    src: url('../fonts/Mensch/mensch-bold-wf.eot');
+    src: url('../fonts/Mensch/mensch-bold-wf.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Mensch/mensch-bold-wf.woff') format('woff'),
+         url('../fonts/Mensch/mensch-bold-wf.ttf') format('truetype'),
+         url('../fonts/Mensch/mensch-bold-wf.svg#MenschMenschBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'mission_scriptregular';
     src: url('../fonts/Mission/mission-script-webfont.eot');
     src: url('../fonts/Mission/mission-script-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Mission/mission-script-webfont.woff') format('woff'),
          url('../fonts/Mission/mission-script-webfont.ttf') format('truetype'),
          url('../fonts/Mission/mission-script-webfont.svg#mission_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pompadourblack';
+    src: url('../fonts/Pompadour/pompadour-webfont.eot');
+    src: url('../fonts/Pompadour/pompadour-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Pompadour/pompadour-webfont.woff') format('woff'),
+         url('../fonts/Pompadour/pompadour-webfont.ttf') format('truetype'),
+         url('../fonts/Pompadour/pompadour-webfont.svg#pompadourblack') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -121,24 +167,33 @@ body {
 }
 
 #header {
-
+	position: relative;
+	float: left;
 }
 
 h1 {
-	font-family: ;
+    font-family: 'mission_scriptregular';
+    font-size: 150px;
+    color: #CC3333;
 }
 
 h2 {
-
+	font-family: 'Open Sans', sans-serif;
+	font-size: 54px;
+	font-weight: 300;
+	color: #698C8C;
+	font-style: italic;
 }
 
 #body {
 	margin: 50px 50px 50px 0px;
+	float: right;
+	position: relative;
 }
 
 h3 {
-	font-size: 2.25em;
-	line-height: 1.5em;
+	font-size: 36px;
+	line-height: 54px;
 	text-align: right;
 	color: rgba(0, 0, 0, 0.6);
 }
@@ -156,11 +211,11 @@ h3.dude {
 }
 
 h3.franchise {
-
+	font-family: 'franchiseregular';
 }
 
 h3.geared {
-
+	font-family: 'geared_slabbold';
 }
 
 h3.lobster {
@@ -168,7 +223,7 @@ h3.lobster {
 }
 
 h3.mensch {
-
+    font-family: 'MenschBold';
 }
 
 h3.mission {
@@ -181,14 +236,26 @@ h3.nixie {
 
 h3.open {
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
 }
 
 h4 {
-
+	display: inline;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 28px;
+	line-height: 54px;
+	text-align: right;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 h5 {
-
+	display: inline;
+	font-family: 'pompadourblack';
+	font-size: 44px;
+	line-height: 54px;
+	text-align: right;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 h3.quaver {
