@@ -307,9 +307,11 @@ a {
 	text-decoration: none;
 }
 
-a:link 	  { color: #3e5252; }
-a:visited { color: #3e5252; }
-a:hover   { color: #CC3333; }
-a:active  { color: #cc3333; }
+a:link h3			{ color: #3e5252; }
+a:visited h3 		{ color: #3e5252; }
+a:hover h3  { color: #CC3333; }
+a:hover h4  { color: #CC3333; }
+a:hover h5  { color: #CC3333; }
+a:active h3			{ color: #cc3333; }
 
 
