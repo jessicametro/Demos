@@ -223,7 +223,7 @@ h3 {
 	font-size: 36px;
 	line-height: 54px;
 	text-align: right;
-	color: rgba(0, 0, 0, 0.6);
+	color: #3e5252;  /* rgba(0, 0, 0, 0.6) */
 }
 
 h3.arvo {
@@ -273,7 +273,7 @@ h4 {
 	font-size: 28px;
 	line-height: 54px;
 	text-align: right;
-	color: rgba(0, 0, 0, 0.6);
+	color: #3e5252;
 	float: left;
 	padding-left: 40px;
 }
@@ -283,11 +283,15 @@ h5 {
 	font-size: 44px;
 	line-height: 54px;
 	text-align: right;
-	color: rgba(0, 0, 0, 0.6);
+	color: #3e5252;
 }
 
 h3.quaver {
 	font-family: 'quaver_serifregular';
+}
+
+h3.quaver .sans {
+	font-family: 'quaver_sansregular';
 }
 
 h3.roboto {
@@ -303,5 +307,9 @@ a {
 	text-decoration: none;
 }
 
+a:link 	  { color: #3e5252; }
+a:visited { color: #3e5252; }
+a:hover   { color: #CC3333; }
+a:active  { color: #cc3333; }
 
 
