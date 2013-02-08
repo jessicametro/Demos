@@ -1,0 +1,83 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+
+
+
+
+
+
+
+<style>
+
+	@font-face {
+		font-family: 'mission_scriptregular';
+		src: url('fonts/Mission/mission-script-webfont.eot');
+		src: url('fonts/Mission/mission-script-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/Mission/mission-script-webfont.woff') format('woff'),
+			 url('fonts/Mission/mission-script-webfont.ttf') format('truetype'),
+			 url('fonts/Mission/mission-script-webfont.svg#mission_scriptregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.button {
+		font-family: 'mission_scriptregular';
+		color: #cccc33;
+		width: 200px;
+		height: 130px;
+		text-align: center;
+		padding-top: 70px;
+		font-size: 50px;
+		background: #006666;
+		float: left;
+		margin-left: 30px;
+	}
+
+	.demo1 {
+		-webkit-transition-property: opacity, margin-top;
+		-webkit-transition-duration: 3s, 5s;
+		transition-property: opacity, margin-top;
+		transition-duration: 3s, 5s;
+
+		opacity: 1;
+		margin-top: 0px;
+	}
+	.demo1.clicked {
+		opacity: 0;
+		margin-top: -375px;
+	}
+	.demo2 {
+		-webkit-transition-property: color, background-color;
+		-webkit-transition-duration: 3s, 5s;
+		transition-property: color, background-color;
+		transition-duration: 3s, 5s;
+
+		color: #003366;
+		background-color: #ffddaa;
+	}
+	.demo2.clicked {
+		color: #ffddaa;
+		background-color: #003366;
+	}
+
+</style>
+
+<div class="button demo1 ">
+	Hello!
+</div>
+
+
+<script>
+	$(function() {
+		$(".demo1").click(function() {
+			$(".demo1").addClass("clicked").html("Goodbye!");
+			setTimeout(function() {
+				$(".demo1").removeClass('clicked').html("Hello!");
+			}, 2000);
+			
+		});
+		$(".demo2").click(function() {
+			$(".demo2").toggleClass("clicked");
+		});
+	});
+</script>
