@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of css reset */
+
+
+
+
+
+
+@font-face {
+    font-family: 'geared_slabbold';
+    src: url('../fonts/Geared/gearedslab-bold-webfont.eot');
+    src: url('../fonts/Geared/gearedslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Geared/gearedslab-bold-webfont.woff') format('woff'),
+         url('../fonts/Geared/gearedslab-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Geared/gearedslab-bold-webfont.svg#geared_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	background: #f2f2f2;
+}
+
+.button {
+	font-family: 'geared_slabbold';
+	font-size: 84px;
+	line-height: 325px;
+	color: #cccc33;
+	text-align: center;
+	background: #006666;
+	width: 300px;
+	height: 365px;
+	margin: 0 auto 0 auto;
+
+	-moz-border-radius-bottomright: 150px;
+	border-bottom-right-radius: 150px;
+	-moz-border-radius-bottomleft: 150px;
+	border-bottom-left-radius: 150px;
+
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.demo1 {
+	-webkit-transition-property: opacity, margin-top;
+	-webkit-transition-duration: 3s, 5s;
+	transition-property: opacity, margin-top;
+	transition-duration: 3s, 5s;
+
+	opacity: 1;
+	margin-top: 0px;
+}
+
+.demo1.clicked {
+	opacity: 0;
+	margin-top: -550px;
+}
+
+.demo2 {
+	-webkit-transition-property: color, background-color;
+	-webkit-transition-duration: 3s, 5s;
+	transition-property: color, background-color;
+	transition-duration: 3s, 5s;
+
+	color: #003366;
+	background-color: #ffddaa;
+}
+
+.demo2.clicked {
+	color: #ffddaa;
+	background-color: #003366;
+}
